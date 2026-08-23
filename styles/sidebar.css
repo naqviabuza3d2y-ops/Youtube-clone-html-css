@@ -5,4 +5,31 @@
     bottom: 0;
     width: 72px;
     background-color: white;
+    z-index: 200;
+    padding-top: 5px;
+}
+
+.sidebar-box {
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 4px;
+    cursor: pointer;
+}
+
+.sidebar-box:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+/* This basically means every img tag inside the .sidebar-box class. */
+.sidebar-box img {
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.sidebar-text {
+    font-size: 10px;
+    font-family: Roboto, Arial;
 }

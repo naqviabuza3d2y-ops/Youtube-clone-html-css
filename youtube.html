@@ -19,52 +19,118 @@
 
 </head>
 
-<div>
+<body>
+
 
     <div class="header">
         <div class="left-section">
             <img class="menu-icon" src="icons/menu-icon.svg">
             <img class="youtube-logo" src="icons/youtube-logo.svg">
         </div>
+
         <div class="middle-section">
             <input class="search-bar" type="text" placeholder="Search">
 
             <button class="search-icon-button">
-                <img class="search-icon" src="icons/search-icon.svg" alt="Search">
+                <img class="search-icon" src="icons/search-icon.svg">
+                <div class="tool-tips">
+                    Search
+                </div>
             </button>
 
             <button class="mic-icon-button">
                 <img class="mic-icon" src="icons/mic-icon.svg">
+                <div class="tool-tips">
+                    Search with your voice
+                </div>
             </button>
         </div>
+
         <div class="right-section">
-            <img class="video-icon" src="icons/upload.svg">
-            <img class="apps-icon" src="icons/youtube-apps.svg">
-            <img class="notification-icon" src="icons/notifications.svg">
+            <div class="upload-icon-container">
+                <img class="upload-icon" src="icons/upload.svg">
+                <div class="tool-tips">
+                    Create
+                </div>
+            </div>
+
+            <div class="apps-icon-container">
+                <img class="apps-icon" src="icons/youtube-apps.svg">
+                <div class="tool-tips">
+                    YouTube apps
+                </div>
+            </div>
+
+            <div class="notification-icon-container">
+                <img class="notification-icon" src="icons/notifications.svg">
+                <div class="notification-number">
+                    3
+                </div>
+                <div class="tool-tips">
+                    Notifications
+                </div>
+            </div>
+
             <img class="profile-pic" src="../channel-pic/my-channel.jpeg">
         </div>
     </div>
 
     <div class="sidebar">
-        <img class="sidebar-icon" src="icons/home.svg">
-        <img class="sidebar-icon" src="icons/explore.svg">
-        <img class="sidebar-icon" src="icons/subscriptions.svg">
-        <img class="sidebar-icon" src="icons/originals.svg">
-        <img class="sidebar-icon" src="icons/youtube-music.svg">
-        <img class="sidebar-icon" src="icons/library.svg">
+        <div class="sidebar-box">
+            <img src="icons/home.svg">
+            <div class="sidebar-text">
+                Home
+            </div>
+        </div>
+
+        <div class="sidebar-box">
+            <img src="icons/explore.svg">
+            <div class="sidebar-text">
+                Explore
+            </div>
+        </div>
+        <div class="sidebar-box">
+            <img src="icons/subscriptions.svg">
+            <div class="sidebar-text">
+                Subscriptions
+            </div>
+        </div>
+        <div class="sidebar-box">
+            <img src="icons/originals.svg">
+            <div class="sidebar-text">
+                Originals
+            </div>
+        </div>
+        <div class="sidebar-box">
+            <img src="icons/youtube-music.svg">
+            <div class="sidebar-text">
+                YouTube Music
+            </div>
+        </div>
+        <div class="sidebar-box">
+            <img src="icons/library.svg">
+            <div class="sidebar-text">
+                Library
+            </div>
+        </div>
     </div>
-
-
 
 
     <div class="video-grid">
         <div class="video-preview">
             <div class="thumbnail-row">
-                <img class="thumbnail" src="../thumbnail/thumbnail-1.webp">
+                <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                    <img class="thumbnail" src="../thumbnail/thumbnail-1.webp">
+                </a>
+                <div class="video-time">
+                    14:20
+                </div>
             </div>
             <div class="video-info-grid">
                 <div class="profile-pic-container">
-                    <img class="profile-pic" src="../channel-pic/channel-1.jpeg">
+                    <a href="https://www.youtube.com/user/MarquesBrownlee">
+                        <img class="profile-pic" src="../channel-pic/channel-1.jpeg">
+                    </a>
                 </div>
                 <div class="video-info-container">
                     <p class="video-title">
@@ -84,11 +150,18 @@
 
         <div class="video-preview">
             <div class="thumbnail-row">
-                <img class="thumbnail" src="../thumbnail/thumbnail-2.webp">
+                <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                    <img class="thumbnail" src="../thumbnail/thumbnail-2.webp">
+                </a>
+                <div class="video-time">
+                    8:22
+                </div>
             </div>
             <div class="video-info-grid">
                 <div class="profile-pic-container">
-                    <img class="profile-pic" src="../channel-pic/channel-2.jpeg">
+                    <a href="https://www.youtube.com/user/Markiplier">
+                        <img class="profile-pic" src="../channel-pic/channel-2.jpeg">
+                    </a>
                 </div>
                 <div class="video-info-container">
                     <p class="video-title">
@@ -108,12 +181,20 @@
 
         <div class="video-preview">
             <div class="thumbnail-row">
-                <img class="thumbnail" src="../thumbnail/thumbnail-3.webp">
+                <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                    <img class="thumbnail" src="../thumbnail/thumbnail-3.webp">
+                </a>
+                <div class="video-time">
+                    9:13
+                </div>
             </div>
             <div class="video-info-grid">
                 <div class="profile-pic-container">
-                    <img class="profile-pic" src="../channel-pic/channel-3.jpeg">
+                    <a href="https://www.youtube.com/user/SSSniperWolf">
+                        <img class="profile-pic" src="../channel-pic/channel-3.jpeg">
+                    </a>
                 </div>
+
                 <div class="video-info-container">
                     <p class="video-title">
                         Crazy Tiktoks Taken Moments Before Disaster
@@ -132,11 +213,18 @@
 
         <div class="video-preview">
             <div class="thumbnail-row">
-                <img class="thumbnail" src="../thumbnail/thumbnail-4.webp">
+                <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                    <img class="thumbnail" src="../thumbnail/thumbnail-4.webp">
+                </a>
+                <div class="video-time">
+                    22:09
+                </div>
             </div>
             <div class="video-info-grid">
                 <div class="profile-pic-container">
-                    <img class="profile-pic" src="../channel-pic/channel-4.jpeg">
+                    <a href="https://www.youtube.com/user/Veritasium">
+                        <img class="profile-pic" src="../channel-pic/channel-4.jpeg">
+                    </a>
                 </div>
                 <div class="video-info-container">
                     <p class="video-title">
@@ -156,11 +244,18 @@
 
         <div class="video-preview">
             <div class="thumbnail-row">
-                <img class="thumbnail" src="../thumbnail/thumbnail-5.webp">
+                <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+                    <img class="thumbnail" src="../thumbnail/thumbnail-5.webp">
+                </a>
+                <div class="video-time">
+                    11:17
+                </div>
             </div>
             <div class="video-info-grid">
                 <div class="profile-pic-container">
-                    <img class="profile-pic" src="../channel-pic/channel-5.jpeg">
+                    <a href="https://www.youtube.com/user/CSDojo">
+                        <img class="profile-pic" src="../channel-pic/channel-5.jpeg">
+                    </a>
                 </div>
                 <div class="video-info-container">
                     <p class="video-title">
@@ -180,11 +275,18 @@
 
         <div class="video-preview">
             <div class="thumbnail-row">
-                <img class="thumbnail" src="../thumbnail/thumbnail-6.webp">
+                <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                    <img class="thumbnail" src="../thumbnail/thumbnail-6.webp">
+                </a>
+                <div class="video-time">
+                    19:59
+                </div>
             </div>
             <div class="video-info-grid">
                 <div class="profile-pic-container">
-                    <img class="profile-pic" src="../channel-pic/channel-6.jpeg">
+                    <a href="https://www.youtube.com/user/MrBeast">
+                        <img class="profile-pic" src="../channel-pic/channel-6.jpeg">
+                    </a>
                 </div>
                 <div class="video-info-container">
                     <p class="video-title">
@@ -204,6 +306,7 @@
 
 
     </div>
-    </body>
+
+</body>
 
 </html>

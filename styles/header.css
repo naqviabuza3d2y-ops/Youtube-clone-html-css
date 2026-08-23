@@ -7,7 +7,8 @@
     left: 0;
     right: 0;
     background-color: white;
-    border-bottom: 1px solid rgb(216, 216, 216);    
+    border-bottom: 1px solid rgb(216, 216, 216);
+    z-index: 100;
 }
 
 .left-section {
@@ -19,18 +20,19 @@
     height: 24px;
     margin-left: 24px;
     margin-right: 24px;
+    cursor: pointer;
 }
 
 .youtube-logo {
     height: 20px;
-
+    cursor: pointer;
 }
 
 .middle-section {
     flex: 1;
     margin-left: 70px;
     margin-right: 35px;
-    max-width: 500px;
+    max-width: 480px;
     display: flex;
     align-items: center;
 }
@@ -38,7 +40,7 @@
 .search-bar {
     flex: 1;
     height: 36px;
-    padding-left: 10px;
+    padding-left: 12px;
     font-size: 16px;
     border: 1px solid rgb(192, 192, 192);
     border-radius: 2px;
@@ -49,20 +51,65 @@
 .search-bar::placeholder {
     font-family: Roboto, Arial;
     font-size: 16px;
-
+    color: rgb(150, 150, 150);
 }
 
 .search-icon-button {
     height: 40px;
     width: 66px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgb(240, 240, 240);
     border: 1px solid rgb(192, 192, 192);
     cursor: pointer;
     margin-left: -1px;
     margin-right: 10px;
+}
+
+.search-icon-button,
+.upload-icon-container,
+.mic-icon-button,
+.apps-icon-container,
+.notification-icon-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.search-icon-button .tool-tips,
+.mic-icon-button .tool-tips,
+.upload-icon-container .tool-tips,
+.apps-icon-container .tool-tips,
+.notification-icon-container .tool-tips {
+    position: absolute;
+    font-family: Roboto, Arial;
+    background-color: gray;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+
+    /* pointer-events controls whether an element can receive mouse/pointer events.
+   none = ignores clicks and lets them pass through to the element underneath.
+   auto = normal behavior (element receives pointer events). */
+    pointer-events: none;
+
+    /* white-space controls how text handles spaces and line breaks.
+   nowrap = keeps all text on one line and prevents wrapping.
+   normal = allows normal wrapping and collapses extra spaces.
+   pre = preserves spaces and line breaks, like <pre>. */
+    white-space: nowrap;
+}
+
+.search-icon-button:hover .tool-tips,
+.upload-icon-container:hover .tool-tips,
+.mic-icon-button:hover .tool-tips,
+.apps-icon-container:hover .tool-tips,
+.notification-icon-container:hover .tool-tips {
+    opacity: 1;
 }
 
 .search-icon {
@@ -74,10 +121,8 @@
     width: 40px;
     border: none;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgb(242, 242, 242);
+    cursor: pointer;
 }
 
 .mic-icon {
@@ -86,28 +131,39 @@
 
 
 .right-section {
-    width: 200px;
+    width: 180px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 22px;
+    margin-right: 20px;
     flex-shrink: 0;
 }
 
-.video-icon {
-    height: 24px;
-}
-
-.apps-icon {
-    height: 24px;
-}
-
+.upload-icon,
+.apps-icon,
 .notification-icon {
     height: 24px;
+    cursor: pointer;
 }
 
 .profile-pic {
     height: 32px;
-    width: 32px;
     border-radius: 50%;
+}
+
+.notification-icon-container {
+    position: relative;
+}
+
+.notification-number {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border-radius: 50%;
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    padding: 2px 5px;
+
 }

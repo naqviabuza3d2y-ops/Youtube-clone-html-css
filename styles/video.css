@@ -1,23 +1,36 @@
-
-
 .thumbnail-row {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+    position: relative;
 }
 
 .thumbnail {
     width: 100%;
 }
 
+.video-time {
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    background-color: black;
+    color: white;
+    padding: 4px 4px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Roboto, Arial;
+    border-radius: 2px;
+}
+
 .profile-pic {
-    width: 40px;
+    width: 32px;
     border-radius: 50px;
 }
 
 
 .video-title {
+    margin-top: 0;
     font-weight: 500;
-    font-size: 15px;
-    margin-bottom: 12px;
+    font-size: 14px;
+    margin-bottom: 10px;
     line-height: 20px;
 }
 
@@ -38,7 +51,7 @@
 
 .video-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 40px;
 }
