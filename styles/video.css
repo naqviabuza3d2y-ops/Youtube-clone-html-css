@@ -29,9 +29,16 @@
     padding: 12px 16px 12px 12px;
     border-radius: 4px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-
     top: 40px;
-    width: 200px;
+    width: 190px;
+
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.profile-pic-container:hover .profile-tool-tips {
+    opacity: 1;
 }
 
 .profile-pic-tt {
@@ -61,11 +68,13 @@
 
 .profile-pic-container {
     position: relative;
+
 }
 
 .profile-pic {
-    width: 32px;
-    border-radius: 50px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
 }
 
 
@@ -75,6 +84,7 @@
     font-size: 14px;
     margin-bottom: 10px;
     line-height: 20px;
+
 }
 
 .video-title a {
@@ -94,12 +104,17 @@
 
 .video-info-grid {
     display: grid;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 36px 1fr;
 }
 
 .video-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 16px;
-    row-gap: 40px;
+    row-gap: 42px;
+}
+
+.video-info-container {
+    margin-left: 14px;
+    ;
 }
