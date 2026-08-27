@@ -33,6 +33,7 @@
 
     opacity: 0;
     transition: opacity 0.15s;
+    z-index: 300;
     pointer-events: none;
 }
 
@@ -108,10 +109,9 @@
 
 .video-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 42px;
-
 }
 
 /* Media queries apply different CSS styles based on the screen size/device, making a website responsive. */
@@ -131,3 +131,5 @@
 .video-info-container {
     margin-left: 14px;
 }
+
+

@@ -1,34 +1,78 @@
-.sidebar {
-    position: fixed;
-    top: 55px;
-    left: 0;
-    bottom: 0;
-    width: 72px;
-    background-color: white;
-    z-index: 200;
-    padding-top: 5px;
+@media (max-width: 1200px) {
+    .sidebar {
+        position: fixed;
+        top: 55px;
+        left: 0;
+        bottom: 0;
+        width: 72px;
+        background-color: white;
+        z-index: 200;
+        padding-top: 5px;
+    }
+
+    .sidebar-box {
+        height: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 4px;
+        cursor: pointer;
+    }
+
+    .sidebar-box:hover {
+        background-color: rgb(230, 230, 230);
+    }
+
+    /* This basically means every img tag inside the .sidebar-box class. */
+    .sidebar-box img {
+        height: 24px;
+        margin-bottom: 4px;
+    }
+
+    .sidebar-text {
+        font-size: 10px;
+    }
+
 }
 
-.sidebar-box {
-    height: 74px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 4px;
-    cursor: pointer;
-}
+@media (min-width: 1200.1px) {
+    .sidebar {
+        position: fixed;
+        top: 55px;
+        left: 0;
+        bottom: 0;
+        width: 216px;
+        background-color: white;
+        z-index: 200;
+        padding-top: 5px;
+    }
 
-.sidebar-box:hover {
-    background-color: rgb(230, 230, 230);
-}
+    .sidebar-box {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 24px;
+        flex-direction: row;
+        column-gap: 16px;
+        cursor: pointer;
+    }
 
-/* This basically means every img tag inside the .sidebar-box class. */
-.sidebar-box img {
-    height: 24px;
-    margin-bottom: 4px;
-}
+    .sidebar-box:hover {
+        background-color: rgb(230, 230, 230);
+    }
 
-.sidebar-text {
-    font-size: 10px;
+    .sidebar-box img {
+        height: 24px;
+        margin-bottom: 4px;
+    }
+
+    .sidebar-text {
+        font-size: 13px;
+    }
+
+    body{
+        padding-left: 240px;
+    }
+
 }
